@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    /* background-color: rgb(160, 86, 228); */
+    background-size: 200% auto;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+    height: auto;
+    font-weight: semibold;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-position: right center;
+}
+.btn-sm{
+    background-image: linear-gradient(to right, blue 0%, #b7d1ff 51%, darkblue 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+    width: 80%;
+    height: 70vh;
 }
